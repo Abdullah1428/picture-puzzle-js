@@ -1,0 +1,32 @@
+{
+  "name": "starter-kit",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Starter kit for frontend task",
+  "engines": {
+    "node": ">=14.x"
+  },
+  "scripts": {
+    "start": "webpack serve --mode=development",
+    "build": "webpack --mode production",
+    "test": "jest"
+  },
+  "author": "schibsted",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.16.7",
+    "@babel/preset-env": "^7.16.7",
+    "babel-jest": "^27.4.6",
+    "babel-loader": "^8.2.3",
+    "css-loader": "^6.5.1",
+    "html-webpack-plugin": "^5.5.0",
+    "jest": "^27.4.7",
+    "node-sass": "^7.0.1",
+    "prettier": "^2.5.1",
+    "sass-loader": "^12.4.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.7.2"
+  }
+}

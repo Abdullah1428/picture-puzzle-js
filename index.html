@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Picture Puzzle Game</title>
+</head>
+<body>
+  <!-- <h1>Aftonbladet Internship Coding Task</h1> -->
+  <h1>Picture Puzzle</h1>
+  <div class="main">
+    <div class='boards-area'>
+      <!-- two div used to create the containers for the puzzle -->
+      <div class="draggable-list" id="draggable-image"></div>
+      <div class="shuffled-list" id='shuffled-image'></div> 
+      <button class="change_image_button" id="change_image">CHANGE IMAGE</button>
+    </div>
+    <!-- stats and options area of the game -->
+    <div class='stats-area'>
+      <h1>STATS AND OPTIONS</h1>
+      <div class="step-counter-container">
+        STEPS: <span id='steps-counter'>0</span> steps
+      </div>
+      <div class="time-counter-contaner" >
+        TIME ELAPSED: <span id='time-counter'>0</span> seconds
+      </div>
+      <div class="game-level" id="game-level">
+        Difficulty Level: 
+        <input type="radio" name="level" id="easy" checked="checked" value="3" /> <label for="easy"> Easy </label>
+        <input type="radio" name="level" id="medium" value="4" /> <label for="medium"> Medium </label>
+        <input type="radio" name="level" id="hard" value="5" /> <label for="hard"> Hard </label>
+      </div>
+      <!-- <button class="change_image_button" id="restart_game">RESTART GAME</button> -->
+
+      <h3 class="rules">Drag and drop the items from Red box (Right Side) to Green box (Left Side) at correct positions to win the game.</h3>
+    </div>
+  </div>
+</body>
+</html>

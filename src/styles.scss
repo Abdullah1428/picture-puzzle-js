@@ -1,0 +1,132 @@
+$primary-color: #ffeb00;
+$secondary-color: #dd2a30;
+$shadow: black;
+$gamebackground-color: #333;
+$right-color: #00FF00;
+
+h1 {
+  color: $primary-color;
+  text-transform: uppercase;
+  text-shadow: -1px 0 $shadow, -1px 0 $shadow, 0 1px $shadow, 1px 0 $shadow,
+    0 -1px $shadow, 1px 0px 0px $shadow, 2px 1px 0px $shadow,
+    3px 2px 0px $shadow, 4px 3px 0px $shadow, 5px 4px 0px $shadow;
+  letter-spacing: 3px;
+  border-bottom: 5px solid $secondary-color;
+  padding: 10px;
+}
+
+body {
+  margin: 1rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+
+.boards-area {
+  width: 1000px;
+  height: 600px;
+  background-color: $gamebackground-color;
+
+  .draggable-list {
+    border:2px solid $right-color;
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+    width: 450px;
+    height: 450px;
+    float: left;
+    margin-top: 1rem;
+
+    .emptydiv {
+      margin: 0;
+      padding: 0;
+      
+      .draggable {
+        margin: 0;
+        padding: 0;
+        float: left;
+      }
+    }
+
+  }
+
+  .shuffled-list {
+    border:2px solid $secondary-color;
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+    width: 450px;
+    height: 450px;
+    float: right;
+    margin-top: 1rem;
+
+    .shuffleddiv {
+      margin: 0;
+      padding: 0;
+      
+      .draggable {
+        margin: 0;
+        padding: 0;
+        float: left;
+      }
+    }
+  }
+}
+
+.stats-area {
+  width: 400px;
+  height: 600px;
+  background-color: $gamebackground-color;
+  margin-left: 1rem;
+}
+
+.step-counter-container, .time-counter-contaner, .game-level{
+  padding: 1rem;
+  margin: 1rem;
+  background-color: $secondary-color;
+  color: $primary-color;
+  border: 1px solid black;
+} 
+
+.change_image_button {
+  background-color: $secondary-color;
+  width: 200px;
+  height: 50px;
+  justify-content: center;
+  color: $primary-color;
+  font-size: 1rem;
+  padding: 1rem;
+  margin: 1rem;
+  float: right;
+}
+
+.rules {
+  color: $primary-color;
+  text-transform: uppercase;
+  text-shadow: -1px 0 $shadow, -1px 0 $shadow, 0 1px $shadow, 1px 0 $shadow,
+    0 -1px $shadow, 1px 0px 0px $shadow, 2px 1px 0px $shadow,
+    3px 2px 0px $shadow, 4px 3px 0px $shadow, 5px 4px 0px $shadow;
+  letter-spacing: 3px;
+  border-bottom: 5px solid $secondary-color;
+  margin: 2rem
+}
+
+
+.dragging {
+  opacity: 0.2;
+}
+
+
+@media (max-width: 1400px) {
+  .main {
+    display: block;
+    flex-direction: 'column'
+  }
+}
+
+.over {
+  background-color: $shadow;
+}
