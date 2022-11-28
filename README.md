@@ -1,4 +1,4 @@
-# Picture Puzzle Game
+# Photo Puzzle Game
 
 A simple picture puzzle game built with plain JS, HTML, CSS and HTML Drag and Drop API
 
